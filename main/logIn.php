@@ -11,7 +11,7 @@
   <div class="wrapper">
     <div id="gradient-border">
 
-      <form action="login2.php" method="post" id="regForm">
+      <form action="login2.1.php" method="post" id="regForm">
         <h1><u>Log-In</u></h1>
         <h3><u>Username</u></h3>
         <input type="text" name="username" size="50" placeholder="Enter Your Username..." />

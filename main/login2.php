@@ -27,13 +27,13 @@ if (!empty($_POST['username'])){
   //https://stackoverflow.com/questions/44201080/check-user-input-value-with-database-value-in-php
 
   $username = $_POST['username'];
-  $password = md5($_POST['password']);
+  $password = $_POST['password'];
   $query = "SELECT * FROM customers where username = '$_POST[username]'";
   $query2 = "SELECT * FROM customers where password = '$_POST[password]'";
   $result1 = mysqli_query($con, $query); //Syntax error: mysqli_query(connection,query);
   $result2 = mysqli_query($con, $query2);
   if(mysqli_num_rows($result1) > 0){
-      $row = mysqli_fetch_assoc($result2);
+      $row = mysqli_fetch_assoc($result1);
       if($row['password'] == $password){ // if you are using encryption like md5 or anything else then you have to add in this line accordingly
           echo "Good, Logged In!";
       }else{
