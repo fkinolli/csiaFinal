@@ -25,7 +25,8 @@ function SignIn()
   }
 }
 if (isset($_POST['submit'])) {
-  SignIn();
+  #SignIn();
+  header("Location: redirect.html");
 }
 
 ?>
