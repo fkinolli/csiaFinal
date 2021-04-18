@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
-    <h1>Supposed Landing Page</h1>
+    <div class="wrapper">
+      <div id="gradient-border">
+        <div id="main">
+          <h1>Welcome!</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
